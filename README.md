@@ -171,8 +171,6 @@ Mockito + StepVerifier
 
 При запуске через java -jar — в консоли
 
-В Docker: docker logs doc_wf -f
-
 Также логи приложения записываются в директорию logs/ в корне проекта: logs/log
 
 
