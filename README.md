@@ -34,18 +34,18 @@ SLF4J
 
 ## Структура проекта
 
-src/main/kotlin/
-├── controller/          # REST-контроллеры
-├── service/             # Бизнес-логика (Mono/Flux)
-├── repository/          # Доступ к данным (JdbcClient, native SQL)
-├── model/               # Сущность Task и Enum TaskStatus
-├── dto/                 # DTO для запросов/ответов
-├── exception/           # Кастомные исключения и глобальный обработчик
-└── config/              # Конфигурационные классы (при необходимости)
+src/main/kotlin/<br>
+├── controller/          # REST-контроллеры<br>
+├── service/             # Бизнес-логика (Mono/Flux)<br>
+├── repository/          # Доступ к данным (JdbcClient, native SQL)<br>
+├── model/               # Сущность Task и Enum TaskStatus<br>
+├── dto/                 # DTO для запросов/ответов<br>
+├── exception/           # Кастомные исключения и глобальный обработчик<br>
+└── config/              # Конфигурационные классы (при необходимости)<br>
 
-src/main/resources/
-├── application.yml      # Конфигурация приложения
-├── db/migration/        # SQL-скрипты миграций Flyway
+src/main/resources/<br>
+├── application.yml      # Конфигурация приложения<br>
+├── db/migration/        # SQL-скрипты миграций Flyway<br>
 
 Главный класс приложения: TaskManagerApplication.kt 
 (расположен в корне src/main/kotlin, без явного пакета, но с указанием scanBasePackages).
