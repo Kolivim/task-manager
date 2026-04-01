@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: task-manager
+  datasource:
+    url: jdbc:h2:file:./data/taskdb;AUTO_SERVER=TRUE
+#   Для in-memory реализации H2 раскомментируйте следующую строку:
+#    url: jdbc:h2:mem:taskdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+logging:
+  level:
+    org.flywaydb: DEBUG
+    root: INFO
+    service: DEBUG
+    repository: DEBUG
+    web: DEBUG
+  file:
+    name: logs/log
